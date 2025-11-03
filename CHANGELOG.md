@@ -114,3 +114,22 @@ All notable changes to the Café Website project are documented in this file.
 - Uploaded updated project files to GitHub repository for submission.
 - Updated README.md with screenshots, references, and changelog documentation.
 - Performed final review for grammar, alignment, and spacing consistency.
+
+### Contact Form Overhaul
+Completely redesigned the Contact Us form with original layout, colour scheme, and styling to match the café theme.
+Implemented semantic HTML5 structure and accessible form elements (label, fieldset, legend) for clarity and usability.
+Added modern CSS styling:
+Café-themed colours (cream, brown, warm tones)
+Rounded input fields and buttons with hover effects
+Shadowed form container for a polished professional look
+Rewrote JavaScript functionality from scratch to handle:
+Form submission via Mail App, Gmail, or Outlook
+Dynamic validation with user feedback messages for incomplete fields
+Custom message formatting including sender name, email, and message content
+Enhanced user experience:
+Displays confirmation message when email draft is opened
+Resets the form automatically after submission
+Prevents empty submissions using JavaScript validation
+Fully responsive and works on desktop, tablet, and mobile layouts
+Added status messages with color-coded feedback for success and errors
+Original design and logic ensure this form is unique and not copied from external templates
