@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvest & Hearth Café</title>
+</head>
+<body background="coffee shop.jpg" align="center">
+
+    <header>
+        <nav>
+      <a href="HOMEPAGE.html" style="color: #f5f0e1; text-decoration: none; margin: 0 15px; font-size: 1.1rem;">HOME</a>
+      <a href="ABOUT US.html" style="color: #f5f0e1; text-decoration: none; margin: 0 15px; font-size: 1.1rem;">ABOUT US</a>
+      <a href="MENU.HTML" style="color: #f5f0e1; text-decoration: none; margin: 0 15px; font-size: 1.1rem;">MENU</a>
+      <a href="ENQUIRY.html" style="color: #f5f0e1; text-decoration: none; margin: 0 15px; font-size: 1.1rem;">ENQUIRY</a>
+      <a href="CONTACT.html" style="color: #f5f0e1; text-decoration: none; margin: 0 15px; font-size: 1.1rem;">CONTACT</a>  
+            
+        </nav>
+    </header>
+
+   <!-- Coffee -->
+    <h2 style="color: #ffcf99;">☕ Signature Coffees</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>House Brew — <strong>R25 / R30 / R35</strong></li>
+      <li>Espresso Shot — <strong>R20 / R25</strong></li>
+      <li>Americano — <strong>R30</strong></li>
+      <li>Cappuccino — <strong>R35</strong></li>
+      <li>Latte (Flavour +R5) — <strong>R38</strong></li>
+      <li>Mocha — <strong>R42</strong></li>
+      <li>Flat White — <strong>R36</strong></li>
+      <li>Iced Coffee — <strong>R35</strong></li>
+    </ul>
+
+    <!-- Tea & Other -->
+    <h2 style="color: #ffcf99;">🍵 Teas & Refreshments</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>Chai Latte — <strong>R40</strong></li>
+      <li>Matcha Latte — <strong>R45</strong></li>
+      <li>Hot Chocolate — <strong>R38</strong></li>
+      <li>Herbal Teas — <strong>R28</strong></li>
+      <li>Iced Tea (Peach/Lemon) — <strong>R30</strong></li>
+      <li>Fresh Lemonade — <strong>R32</strong></li>
+    </ul>
+
+    <!-- Pastries -->
+    <h2 style="color: #ffcf99;">🥐 Fresh-Baked Pastries</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>Classic Croissant — <strong>R30</strong></li>
+      <li>Almond Croissant — <strong>R36</strong></li>
+      <li>Blueberry Muffin — <strong>R32</strong></li>
+      <li>Cinnamon Roll — <strong>R34</strong></li>
+      <li>Banana Bread Slice — <strong>R30</strong></li>
+      <li>Chocolate Chip Cookie — <strong>R20</strong></li>
+      <li>Brownie Bar — <strong>R28</strong></li>
+    </ul>
+
+    <!-- Light Meals -->
+    <h2 style="color: #ffcf99;">🥗 Light Meals & Toasts</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>Avocado Toast — <strong>R60</strong> (Add Egg +R10)</li>
+      <li>Breakfast Sandwich — <strong>R65</strong></li>
+      <li>Quiche Slice — <strong>R55</strong></li>
+      <li>Granola & Yogurt Bowl — <strong>R50</strong></li>
+      <li>Harvest Bowl — <strong>R75</strong></li>
+      <li>Tomato Basil Soup — <strong>R55</strong></li>
+    </ul>
+
+    <!-- Add-ons -->
+    <h2 style="color: #ffcf99;">🧋 Extras & Milk Options</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>Oat, Almond, Soy, or Skim Milk — <strong>Free</strong></li>
+      <li>Flavoured Syrup (Vanilla, Caramel, Hazelnut) — <strong>+R5</strong></li>
+      <li>Extra Espresso Shot — <strong>+R8</strong></li>
+      <li>Whipped Cream — <strong>+R6</strong></li>
+    </ul>
+  
+<div class="menu-tabs">
+  <button class="tab" onclick="showMenu('breakfast')">Breakfast</button>
+  <button class="tab" onclick="showMenu('lunch')">Lunch</button>
+  <button class="tab" onclick="showMenu('desserts')">Desserts</button>
+</div>
+
+<div id="breakfast" class="menu-section">Croissant, Coffee, Pancakes...</div>
+<div id="lunch" class="menu-section" style="display:none;">Sandwiches, Salads...</div>
+<div id="desserts" class="menu-section" style="display:none;">Cakes, Muffins...</div>
+
+<div class="gallery">
+  <img src="latte.jpg" alt="Latte" onclick="openLightbox(this)">
+  <img src="pastry.jpg" alt="Pastry" onclick="openLightbox(this)">
+</div>
+
+<div id="lightbox" class="lightbox" onclick="this.style.display='none'">
+  <img id="lightbox-img" src="">
+</div>
+
+<button id="backToTop">↑</button>
+
+<p>View our <a href="menu.html">menu</a> to see what’s brewing!</p>
+
+<div class="menu-item">
+  <p>Chocolate Muffin - R25</p>
+  <button onclick="addToCart('Chocolate Muffin')">Add to Cart</button>
+</div>
+<div id="cart"></div>
+
+
+
+<script src="script.js"></script>    
+</body>
+</html>
